@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes - Acasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .elegant-font {
+            font-family: 'Playfair Display';
+            font-weight: 500;
+        }
+
+        .elegant-font-light {
+            font-family: 'Playfair Display';
+            font-weight: 300;
+        }
+
+        .elegant-font-navlink {
+            font-family: 'Playfair Display';
+            font-weight: 300;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 93.2vh;
+            background-color: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .mercedes-hero {
+            max-width: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(
+'./assets/mercedes-hero-2.jpg');
+                    
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="h-16 bg-white sticky top-0 z-50">
+        <div id="img-container" class="absolute left-[45%] md:left-[50%] top-2 h-12 w-12">
+          <img src="./assets/mercedes-logo.png" alt="avatar" class="h-full w-full">
+        </div>
+
+
+      
+        <div id="nav-container" class="bg-black p-2 flex flex-col items-end">
+            <div id="nav-icon" class="h-12 w-12 p-2 group lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg>" viewBox="0 0 20 20" fill="white" class="h-full w-full group-hover:fill-blue-500">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          
+            <ul id="nav-menu" class="hidden w-full space-y-2 pr-3 font-semibold text-xl text-right lg:h-12 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0">
+              <a href="acasa.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">Acasa</li></a>
+              <a href="modele.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">G-Class</li></a>
+              <a href="sclass.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">S-Class</li></a>
+              <a href="https://www.youtube.com/@MercedesBenz"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">Youtube</li></a>
+            </ul>
+          </div>
+      </header>
+
+      <div class="hero-section">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./assets/857194-hd_1280_720_25fps.mp4" type="video/mp4">
+          </video>
+
+          <div class="flex flex-col items-center space-y-8">
+            <h1 class="elegant-font text-white text-3xl font-bold lg:text-4xl lg:text-7xl">Povestea Inovației și Eleganței</h1>
+            <p class="text-white text-xl max-w-[450px] lg:max-w-[800px] text-center">Descoperă fascinanta poveste a unei mărci legendare, în care inovația și eleganța se întâlnesc pentru a crea simboluri ale luxului și performanței automobilistice.</p>
+            <div class="flex flex-col lg:flex-row lg:space-y-0 space-x-0 space-y-4 items-center flex-row lg:space-x-4">
+                <a href="#info-home"><button class="py-2 px-4 w-[200px] text-white border-solid border-2 border-white hover:bg-white hover:text-black">Afla mai multe</button></a>
+                <a href="modele.html"><button class="py-2 px-4 w-[200px] bg-white text-black border-solid border-2 border-white hover:bg-transparent hover:text-white">G-Class</button></a>
+            </div>
+            
+          </div>
+
+         
+
+          
+      </div>
+
+      <div id="info-home" class="mercedes-hero h-[100vh]">
+        <div class="p-[70px] lg:p-[150px] space-y-8">
+            <h1 class="elegant-font text-white text-3xl lg:text-5xl font-bold">Bine ați venit în lumea Mercedes-Benz</h1>
+            <p class="text-white text-xl lg:max-w-[50%] leading-[30px]">Experimentați luxul, inovația și performanța cu Mercedes-Benz. De la modelele clasice care redefinesc eleganța la vehiculele electrice care marchează viitorul mobilității, fiecare Mercedes-Benz este o expresie a excelenței ingineriei germane.</p>
+        </div>
+      </div>
+
+      <section id="mercedes-part-three" class="hidden lg:block">
+        <div class="p-[200px] flex flex-row space-x-40">
+            <div class=" space-y-12">
+                <div class="space-y-6">
+                    <h2 class="elegant-font text-2xl text-slate-700">
+                        Vehicule
+                    </h2>
+                    <h1 class="elegant-font-light text-5xl text-black">
+                        Welcome to beyond
+                    </h1>
+                </div>
+                
+                <img src="./assets/beyond.jpg" alt="" class="h-[712px] w-[512px] hover:scale-105">
+            </div>
+
+            <div class="flex flex-col space-y-20">
+                <div class="space-y-12">
+                <div class="space-y-6">
+                    <h2 class="elegant-font text-2xl text-slate-700">
+                        Mercedes-Benz
+                    </h2>
+                    <h1 class="elegant-font-light text-5xl text-black">
+                        Definim clasa inca din 1886
+                    </h1>
+                </div>
+                
+                <img src="./assets/mercedes-interior.jpg" alt="" class="h-[460px] w-[730px] hover:scale-105"></div>
+
+                <div class="space-y-12">
+                    <div class="space-y-6">
+                        <h2 class="elegant-font text-2xl text-slate-700">
+                            Viitoarea mobilitate
+                        </h2>
+                        <h1 class="elegant-font-light text-5xl text-black">
+                            Neon Dreams
+                        </h1>
+                    </div>
+                    
+                    <img src="./assets/neondreams.jpg" alt="" class="h-[460px] w-[730px] hover:scale-105"></div>
+                    
+            </div>
+        </div>
+        
+      </section>
+
+      <section class="bg-black">
+        <div class="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-12 p-[60px] lg:p-[100px]">
+            <h1 class="max-w-[900px] leading-[50px] lg:leading-[90px] text-white elegant-font text-3xl lg:text-6xl">
+                Filosofia designului Mercedes consta in bipolaritatea dintre inteligenta si emotie.
+            </h1>
+            <iframe class="w-[300px] h-[200px] lg:w-[600px] lg:h-[400px]" width="600px" height="400px" src="https://www.youtube.com/embed/-4zsY28t76k?autoplay=1&mute=1&loop=1" title="The New S-Class: World Premiere | Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+      </section>
+      
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

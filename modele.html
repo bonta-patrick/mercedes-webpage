@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes - Acasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .elegant-font {
+            font-family: 'Playfair Display';
+            font-weight: 500;
+        }
+
+        .elegant-font-light {
+            font-family: 'Playfair Display';
+            font-weight: 300;
+        }
+
+        .elegant-font-navlink {
+            font-family: 'Playfair Display';
+            font-weight: 300;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 93.2vh;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(
+'./assets/models-hero.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .back-video {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .mercedes-hero {
+            max-width: 100%;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(
+'./assets/mercedes-hero-2.jpg');
+                    
+            object-fit: cover;
+        }
+
+        .last-section {
+            max-width: 100%;
+            height: 90vh;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                url(
+'./assets/gclassfive.jpeg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="h-16 bg-white sticky top-0 z-50">
+        <div id="img-container" class="absolute left-[45%] lg:left-[50%] top-2 h-12 w-12">
+          <img src="./assets/mercedes-logo.png" alt="avatar" class="h-full w-full">
+        </div>
+
+
+      
+        <div id="nav-container" class="bg-black p-2 flex flex-col items-end">
+            <div id="nav-icon" class="h-12 w-12 p-2 group lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg>" viewBox="0 0 20 20" fill="white" class="h-full w-full group-hover:fill-blue-500">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          
+            <ul id="nav-menu" class="hidden w-full space-y-2 pr-3 font-semibold text-xl text-right lg:h-12 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0">
+                <a href="acasa.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">Acasa</li></a>
+                <a href="modele.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">G-Class</li></a>
+                <a href="sclass.html"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">S-Class</li></a>
+                <a href="https://www.youtube.com/@MercedesBenz"><li class="elegant-font-navlink text-white hover:text-slate-300 hover:cursor-pointer">Youtube</li></a>
+            </ul>
+          </div>
+      </header>
+
+      <div class="hero-section object-cover">
+        <div class="flex flex-col items-center justify-center space-y-12">
+            <h1 class="elegant-font text-white text-3xl lg:text-7xl text-center">Experimenteaza noul G-Class</h1>
+            <p class="text-white text-xl">Offroad. Nelimitat. Infiintat in 1979.</p>
+            <div class="flex flex-col lg:flex-row lg:space-y-0 space-x-0 space-y-4 items-center flex-row lg:space-x-4">
+                <a href="#imagini-gclass"><button class="py-2 px-4 w-[200px] text-white border-solid border-2 border-white hover:bg-white hover:text-black">Vezi G-Class</button></a>
+                <a href="#info-gclass"><button class="py-2 px-4 w-[200px] bg-white text-black border-solid border-2 border-white hover:bg-transparent hover:text-white">Vezi Info</button></a>
+            </div>
+        </div>
+        
+      </div>
+
+      <section id="info-gclass" class="bg-black flex flex-col lg:flex-row">
+        <div class="w-full lg:w-[50%] p-[40px] lg:p-[70px] flex flex-col space-y-[150px]">
+        <div class="space-y-12">
+            <h1 class="text-white text-3xl lg:text-5xl elegant-font">
+                Cel mai nou G-Class
+            </h1>
+            <p class="text-white text-xl leading-loose">
+                Noua evoluție a legendei off-road rămâne fidelă rădăcinilor sale și punctelor sale forte: capacități off-road de neegalat care îți permit să cucerești terenuri accidentate cu ușurință, performanțe confortabile pe drumurile asfaltate, oferind o experiență de condus lină și plăcută, și un design distinctiv și inconfundabil care atrage atenția și reflectă esența și caracterul inconfundabil al acestui SUV iconic.
+            </p>
+        </div>
+
+        <div class="space-y-12">
+            <h1 class="text-white text-3xl lg:text-5xl elegant-font">
+                Construit pentru a rezista
+            </h1>
+            <p class="text-white text-xl leading-loose">
+                Construită cu o filozofie orientată spre viitor încă din 1979, G-Class este cu adevărat creată pentru a rezista în timp. Îmbunătățită pentru performanțe superioare atât pe drumurile asfaltate, cât și în off-road, eficiență îmbunătățită și durabilitate fără egal, aceasta demonstrează angajamentul nostru constant față de excelență și inovație în fiecare detaliu.
+            </p>
+        </div>
+        </div>
+
+        
+        <img src="./assets/gclasstwo-ezgif.com-avif-to-jpg-converter.jpg" class="justify-end h-[60vh] lg:h-[100vh] w-[100%] lg:w-[50%]">
+      </section>
+
+      <section class="bg-black flex flex-col lg:flex-row space-x-0 lg:space-x-[180px] p-[40px] lg:p-[100px]">
+        <img src="./assets/gclassinterior-ezgif.com-avif-to-jpg-converter.jpg" alt="" class="h-[512px] lg:h-[612px] w-[712px] hover:scale-105">
+        <div class="flex flex-col justify-center space-y-12 pt-[50px] lg:pt-0">
+            <h1 class="text-white text-5xl elegant-font">
+                Confort de prima clasa
+            </h1>
+            <p class="text-white text-xl leading-loose">
+                Interiorul clasei G îmbină sofisticarea cu practicitatea, oferind numeroase configurații prin intermediul programului MANUFAKTUR pentru a se potrivi caracterului fiecărui șofer. Îmbunătățind dinamicile de conducere excepționale și experiența unică la bord cu o notă personală și confort maxim, fiecare detaliu al interiorului reflectă atenția noastră la confort și stil.
+            </p>
+        </div>
+      </section>
+
+      <section id="imagini-gclass" class="bg-black flex flex-col lg:flex-row items-center justify-center p-[20px] lg:p-[100px]">
+        <img src="./assets/gclassthree-ezgif.com-avif-to-jpg-converter.jpg" alt="" class="h-[612px] w-full lg:w-[650px] hover:scale-105">
+        <img src="./assets/gclassfour-ezgif.com-avif-to-jpg-converter.jpg" alt="" class="h-[612px] w-full lg:w-[650px] hover:scale-105">
+      </section>
+
+      <section class="last-section p-[100px]">
+        <h1 class="text-5xl text-white elegant-font">Alege confortul.</h1>
+      </section>
+
+      <script src="main.js"></script>
+
+      
+      </body>
+</html>
